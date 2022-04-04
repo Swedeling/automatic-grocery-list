@@ -16,7 +16,7 @@ class GroceryWidget:
         yscrollbar.pack(side = RIGHT, fill = Y)
         
         label = Label(self.window,
-                    text = "Select the languages below :  ",
+                    text = "Select the dishes :  ",
                     font = ("Calibri", 10), 
                     padx = 10, pady = 10)
         label.pack()
@@ -40,7 +40,7 @@ class GroceryWidget:
         # Attach listbox to vertical scrollbar
         yscrollbar.config(command = self.list.yview)
 
-        button = Button(self.window,text='Push me!',command=self._but_callback)
+        button = Button(self.window,text='Ready!',command=self._but_callback)
         button.pack(pady=20)
 
         self.window.mainloop()
